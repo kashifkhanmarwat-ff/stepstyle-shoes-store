@@ -1,0 +1,293 @@
+
+/* General Website Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #292929;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #171717;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d8c3a5 !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-left: 20px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d8c3a5 !important;
+}
+
+/* Hero Section Styling */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+        url("https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=1600");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    padding: 80px 0;
+}
+
+.tagline {
+    color: #e1c9a8;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Shop Button Styling */
+.shop-btn {
+    background-color: #d8c3a5;
+    color: #171717;
+    padding: 13px 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #ffffff;
+    color: #171717;
+}
+
+/* Common Section Spacing */
+.section-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #252525;
+}
+
+/* About Section Styling */
+.about-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    padding: 30px;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about-content ul {
+    line-height: 2;
+    padding-left: 22px;
+}
+
+/* Product Collection Styling */
+.products-section {
+    background-color: #f5f1eb;
+}
+
+.product-card {
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 22px;
+}
+
+.product-card h5 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #666666;
+}
+
+.product-card h6 {
+    color: #96754b;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Product Button Styling */
+.product-btn {
+    background-color: #242424;
+    color: #ffffff;
+    padding: 11px 23px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.product-btn:hover {
+    background-color: #b49a78;
+    color: #ffffff;
+}
+
+/* Price Table Styling */
+table {
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    padding: 15px !important;
+}
+
+table td {
+    padding: 14px !important;
+}
+
+/* Shoe Gallery Styling */
+.gallery-section {
+    background-color: #f5f1eb;
+}
+
+.carousel img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background-color: #f5f1eb;
+    border-radius: 10px;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #b49a78;
+    box-shadow: 0 0 5px rgba(180,154,120,0.4);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #171717;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile and Tablet Responsive Styling */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 14px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .hero {
+        min-height: 430px;
+        text-align: center;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about-img {
+        height: 280px;
+        margin-bottom: 25px;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+
+    .carousel img {
+        height: 260px;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+}
